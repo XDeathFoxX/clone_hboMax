@@ -34,20 +34,236 @@
   }
 
 body {
-    background-color: var(--secondary-color);
-    font-family: 'Raleway';
+    /* background-color: var(--secondary-color); */
+    font-family: 'Raleway',sans-serif;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    justify-items: center;
+    background-color: var(--tertiary-color);
 }
-
 header {
     display: flex;
-    flex-direction: row;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
 }
 
 header img {
-    align-items: flex-start;
+    align-self: flex-start;
     position: relative;
-    left: -56.25rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    /* right: 47.25rem; */
+    width: 10rem;
+}
+
+.botoes {
+    display: flex;
+    gap: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    color: var(--text-color);
+}
+
+.assinar {
+    border-radius: 2rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    width: 10.159rem;
+    height: 1.875rem;
+    background-color: var(--tertiary-color);
+    border: none;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+  width: 100%;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+}
+
+.titulos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulos p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.titulos h1 {
+  font-size: 3rem;
+  font-weight:800;
+  color:var(--text-color);
+}
+
+.divider {
+  background: var(--divider-bg-color);
+  width: 70%;
+  height: 5px;
+  max-width: 700px;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.valor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.valor p {
+  font-size: 1.25rem;
+}
+
+.valor h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.valor h1 span {
+  font-size: 1rem;
+}
+
+.button {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 800;
+  margin-top: 2rem;
+  padding: 16px 40px;
+  border-radius: 2rem;
+  background-color: var(--tertiary-color);
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.button-gradient {
+  background: var(--btn-bg-color-gradient);
+  outline: 3px solid transparent;
+  background-size: 250%;
+  transition: background 1s, outline 1s, transform 1s;
+}
+
+.condicao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  color: var(--text-color);
+  margin-bottom: 18rem;
+}
+
+.conheca {
+  white-space: pre-line;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.cardMobile , .cardMulti {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  padding: 2.5rem 3.75rem;
+  width: 28rem;
+  height: 37.5rem;
+  background: var(--card-bg-color);
+}
+
+.cardMobile button {
+  text-transform: uppercase;
+  padding: 1rem 2.5rem;
+  border-radius: 500px;
+  font-weight: 700;
+  color: var(--text-color);
+  border: none;
+  background: var(--btn-bg-color-gradient);
+  letter-spacing: 0.25rem;
+}
+
+.cardMulti button {
+  text-transform: uppercase;
+  padding: 1rem 2.5rem;
+  border-radius: 500px;
+  font-weight: 700;
+  color: var(--text-color);
+  border: none;
+  background: var(--btn-bg-color-gradient);
+  letter-spacing: 0.25rem;
+}
+
+.vantagens_plano {
+  text-align: left;
+  list-style: none;
+  padding-left: 0.875rem;
+  margin-bottom: 0.875rem;
+}
+
+.descricao_vantagem {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.descricao_vantagem::marker {
+  content: "+";
+  font-size: 2rem;
+  margin-right: 8px;
+  margin-left: 2rem;
+}
+
+.cards {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.mobile , .multitelas {
+  display: flex;
+  gap:10rem;
+}
+
+.cards h3 {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  font-weight: 800;
+}
+
+.cards p {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  font-weight: 800;
+}
+
+.cards span {
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: 100;
 }
