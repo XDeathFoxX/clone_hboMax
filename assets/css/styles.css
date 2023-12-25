@@ -179,6 +179,7 @@ main {
 }
 
 .conheca {
+  display: flex;
   white-space: pre-line;
   text-align: center;
   font-size: 2rem;
@@ -193,7 +194,7 @@ main {
   justify-content: space-between;
   border-radius: 0.5rem;
   padding: 2.5rem 3.75rem;
-  width: 28rem;
+  max-width: 28rem;
   height: 37.5rem;
   background: var(--card-bg-color);
 }
@@ -243,6 +244,10 @@ main {
 .cards {
   display: flex;
   gap: 2.5rem;
+  margin-bottom: 10rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .mobile , .multitelas {
@@ -266,4 +271,191 @@ main {
   font-size: 1rem;
   color: var(--text-color);
   font-weight: 100;
+}
+
+.descubra {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.planos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('/assets/images/background-movies-series.png');
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.channelCards {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 3rem;
+  margin-bottom: 10rem;
+}
+
+.cardContent {
+  width: 22.333rem;
+  height: 33.661rem;
+}
+
+.hbo {
+  background-image: url("/assets/images/hbo-default_0.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hbo:hover {
+  background-image: url("/assets/images/hbo-hover_0.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scale(1.1);
+  transition: 700ms linear;
+  border: 2px #ff00e5 solid ;
+  border-radius: 20px;
+}
+
+.max {
+  background-image: url("/assets/images/MAX-Default.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.max:hover {
+  background-image: url("/assets/images/MAX-Hover.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scale(1.08);
+  transition: 700ms linear;
+  border: 2px #ff00e5 solid ;
+  border-radius: 20px;
+}
+
+.dc {
+  background-image: url("/assets/images/DC_Default.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dc:hover {
+  background-image: url("/assets/images/DC-Hover.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scale(1.1);
+  transition: 700ms linear;
+  border: 2px #ff00e5 solid ;
+  border-radius: 20px;
+}
+
+.wb {
+  background-image: url("/assets/images/WB-Default.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wb:hover {
+  background-image: url("/assets/images/WB-Hover.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scale(1.1);
+  transition: 700ms linear;
+  border: 2px #ff00e5 solid ;
+  border-radius: 20px;
+}
+
+.cn {
+  background-image: url("/assets/images/CN-Default.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cn:hover {
+  background-image: url("/assets/images/CN-Hover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scale(1.1);
+  transition: 700ms linear;
+  border: 2px #ff00e5 solid ;
+  border-radius: 20px;
+}
+
+.ucl {
+  background-image: url("/assets/images/UCL-Default.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ucl:hover {
+  background-image: url("/assets/images/UCL-Hover.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scale(1.1);
+  transition: 700ms linear;
+  border: 2px #ff00e5 solid ;
+  border-radius: 20px;
+}
+
+.links {
+  display: flex;
+  gap: 3rem;
+}
+
+.links a {
+  text-decoration: none;
+  font-family: Raleway;
+  text-transform: uppercase;
+  color: var(--link-color);
+  font-weight: 600;
+}
+
+.links a:hover {
+  color: var(--text-color);
+  transition: 500ms linear;
+}
+
+.licenca {
+  color: var(--link-color);
+  font-size: 0.75rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.redes {
+  display: flex;
+  gap: 2.5rem;  
+  margin-bottom: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width:940px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .channelCards {
+    display: flex;
+    justify-content: space-between;
+    height: 31.25rem;
+    width: 41.875rem;
+    overflow-x: scroll;
+  }
+
+  .cardContent {
+    flex-basis: 50%;
+    flex-shrink: 0;
+    height: 100%;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .redes {
+    flex-direction: column;  
+  }
 }
